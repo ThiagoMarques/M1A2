@@ -188,7 +188,7 @@ p {
 @media (max-width: 640px) {
   .coluna {
     margin-left: 0px;
-}
+  }
 }
 
 .linha {
@@ -605,6 +605,7 @@ video{
   background-color: #006599 !important;
   cursor: pointer;
 }
+
 
 
 /*.fade{
