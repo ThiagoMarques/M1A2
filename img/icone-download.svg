@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#077730;}
+	.st1{fill:#38932F;}
+	.st2{fill:#0B4415;}
+</style>
+<title>download</title>
+<path class="st0" d="M24,80c-2.2,0-4,1.8-4,4s1.8,4,4,4l26-4L24,80z"/>
+<polygon class="st1" points="76,80 50,80 24,80 50,84 "/>
+<path class="st0" d="M76,80l-26,4l26,4c2.2,0,4-1.8,4-4S78.2,80,76,80z"/>
+<polygon class="st2" points="24,88 76,88 50,84 "/>
+<path class="st0" d="M60,55V16c0-2.2-1.8-4-4-4h-6v53L60,55z"/>
+<path class="st1" d="M50,12h-6c-2.2,0-4,1.8-4,4v39l10,10V12z"/>
+<polygon class="st0" points="40,55 25,55 42.5,72.5 50,80 50,65 "/>
+<polygon class="st2" points="60,55 50,65 50,80 57.5,72.5 75,55 "/>
+</svg>
