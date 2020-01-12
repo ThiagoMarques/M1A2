@@ -315,17 +315,17 @@ p {
 .destaque.audio.sem-texto.direita {
   background-position: top 0px right 6px;
 }
-/* .destaque.audio.sem-texto audio {
+.destaque.audio.sem-texto audio {
     height: 55px;
-} */
+}
 audio{
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-/*      -webkit-box-shadow: 1px 1px 89px -16px rgba(0,0,0,0.75);
+     /* -webkit-box-shadow: 1px 1px 89px -16px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 1px 89px -16px rgba(0,0,0,0.75);
     background-color: #f1f2f4;
-    box-shadow: 1px 1px 11px 0px rgba(0,0,0,0.75);*/
+    box-shadow: 1px 1px 11px 0px rgba(0,0,0,0.75); */
 
 }
 video{
