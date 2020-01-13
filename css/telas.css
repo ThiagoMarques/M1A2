@@ -611,15 +611,20 @@ video{
 .img-icon{
   max-width: 80px;
   max-height: 80px;
-  width: auto;
-  height: auto;
+  float: left;
+  padding-right: 10px;
 }
 .lista-circle {
   list-style-type: circle;
 }
 .texto-destaque{
-  display: inline-block;
-  padding-left: 32px;
+  background-color: #1d427dad;  
+  background-position: top 16px left 6px;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  border-radius: 9px;
+  padding-left: 8px;
+  margin-left:80px 
 }
 .borda-destaque{
   border-style: solid;
@@ -660,6 +665,11 @@ video{
   margin-left: 5px;
   margin-right: 5px;
 }
+.sombra-texto ul li i{
+  background-color: #E0EDF6;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 .altura-sombra{
   min-height: 400px;
@@ -687,6 +697,11 @@ video{
 .texto-link-rodape p a{
   background: transparent;
   color: blue;
+}
+.imagem-texto-rodape{
+  margin-top: 80px;
+
+  
 }
 
 
