@@ -207,7 +207,7 @@ p {
   float: left;
 }
 .largura-1_3 {
-  width: 29%;
+  width: 32%;
   float: left;
 }
 
@@ -635,11 +635,83 @@ video{
 .destaque-inferior{
   padding-left: 32px;
 }
+.texto-rodape{
+  margin: 20px;
+}
 .vertical-align {
   position: relative;
   top: 50%;
-  transform: translateY(80%); /* Adicionar os prefixos dos navegadores */
+  transform: translateY(80%); 
 }
+.background-pagina{
+  background-repeat: no-repeat;
+  background: url('../recursos/M1_A2_RM_28.svg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.sombra-texto{
+  background-color: #1d427dad;  
+  background-position: top 16px left 6px;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  border-radius: 9px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.altura-sombra{
+  min-height: 400px;
+}
+.mostrar{
+  display: flex;
+}
+.oculta{
+  display: none;
+}
+
+.accordion-comissao{
+  margin: 50px auto;
+  text-align: center;
+}
+
+
+/* Accordian */
+
+.accordion {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button.accordion.active, button.accordion:hover{
+  background: #c9d5dd;
+}
+
+.active, .accordion:hover {
+  background-color: transparent;
+}
+
+.panel2 {
+  padding: 0 18px;
+  background-color: transparent;
+  display: none;
+  overflow: hidden;
+}
+
+
+
 
 @media (max-width: 640px) {
   .img-icon{

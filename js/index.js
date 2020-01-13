@@ -92,7 +92,7 @@ for (var m=1;m<=qtd_menu;m++) {
       $('.nav__link').removeClass('nav__link--active');
       $("a[href=#"+current_ancor+"]").addClass('nav__link--active');
       $('#current_page').html(current_ancor);
-      console.log($('#current_page').html(current_ancor))
+      // console.log($('#current_page').html(current_ancor))
       progresso();
     }else{
       current_ancor--;
