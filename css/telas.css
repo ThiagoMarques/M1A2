@@ -267,7 +267,7 @@ p {
 }
 }
 
-.destaque.esquerda {
+.destaque-esquerda {
   text-align: left;
   padding: 20px 12px 20px 80px;
   margin-left: -25px;
@@ -277,11 +277,11 @@ p {
   margin-left: -141px !important;
   padding-left: 150px;
 }
-.destaque.esquerda.legenda {
+.destaque-esquerda-legenda {
   margin-left: -16px;
   padding-left: 16px;
 }
-.destaque.direita {
+.destaque-direita {
   text-align: right;
   margin-left: -12px;
   margin-right: -25px;
@@ -293,29 +293,29 @@ p {
   padding-right: 119px;
 }
 
-.destaque.direita {
+.destaque-direita {
   margin-left: -12px;
   margin-right: -16px;
 }
-.destaque.direita.legenda {
+.destaque-direita-legenda {
   margin-right: -16px;
   padding-right: 16px;
 }
-.destaque.importante.direita {
+.destaque-importante-direita {
   background-position: center right 6px;
 }
-.destaque.importante.esquerda {
+.destaque-importante-esquerda {
   background-position: center left 6px;
 }
-.destaque.audio.sem-texto {
+.destaque-audio.sem-texto {
   min-height: auto;
   background-position: top 0px left 6px;
   width: 100%;
 }
-.destaque.audio.sem-texto.direita {
+.destaque-audio-sem-texto-direita {
   background-position: top 0px right 6px;
 }
-.destaque.audio.sem-texto audio {
+.destaque-audio-sem-texto audio {
     height: 55px;
 }
 audio{
@@ -332,7 +332,7 @@ video{
   width: 100%;
 
 }
-.destaque.esquerda.sem-icone {
+.destaque-esquerda-sem-icone {
   padding-left: 32px;
   padding-right: 16px;
   min-height: auto;
@@ -373,28 +373,28 @@ video{
    }
 }
 
-.destaque.saiba-mais {
+.destaque-saiba-mais {
   background-image: url("../img/icone-saiba-mais.svg");
 }
-.destaque.texto {
+.destaque-texto {
   background-image: url("../img/icone-texto.svg");
 }
-.destaque.video {
+.destaque-video {
   background-image: url("../img/icone-video.svg");
 }
-.destaque.audio {
+.destaque-audio {
   background-image: url("../img/icone-audio.svg");
 }
-.destaque.importante {
+.destaque-importante {
   background-image: url("../img/icone-importante.svg");
 }
-.destaque.conceito {
+.destaque-conceito {
   background-image: url("../img/icone-verbete.svg");
 }
-.destaque.download {
+.destaque-download {
   background-image: url("../img/icone-download.svg");
 }
-.destaque.sem-icone {
+.destaque-sem-icone {
   padding-left: 16px;
     padding-right: 16px;
     min-height: auto;
@@ -606,6 +606,46 @@ video{
   cursor: pointer;
 }
 
+
+/* Thiago Santana Marques */
+.img-icon{
+  max-width: 80px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+}
+.lista-circle {
+  list-style-type: circle;
+}
+.texto-destaque{
+  display: inline-block;
+  padding-left: 32px;
+}
+.borda-destaque{
+  border-style: solid;
+  border-color: #999;
+  border-radius: 9px;
+  margin-left: 32px;
+}
+.destaque-superior{
+  margin-top: 50px; 
+  padding: 8px 16px 8px 32px;
+  align-items: left;
+}
+.destaque-inferior{
+  padding-left: 32px;
+}
+.vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(80%); /* Adicionar os prefixos dos navegadores */
+}
+
+@media (max-width: 640px) {
+  .img-icon{
+    width: 100%;
+   }
+}
 
 
 /*.fade{
