@@ -701,6 +701,32 @@ video{
 .imagem-texto-rodape{
   margin-top: 80px;
 }
+.badge-quiz{
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border-radius: 9px;
+  padding: 5px;
+}
+.img-quiz{
+  margin-top: 20px;
+}
+.img-quiz img{
+  width: 100%;
+}
+.btn-teste{
+  background-color: #006599;
+  color: white;
+  padding: 8px;
+  border-radius: 9px;
+  box-shadow: none;
+}
+button.btn-teste.active, button.btn-teste:hover{
+  background-color: #0076b3;
+}
+.btn-teste:hover{
+  background-color: #006599;
+}
 
 
 /* Accordian */
