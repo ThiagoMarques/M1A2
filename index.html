@@ -159,7 +159,7 @@
 
 			</div>
 			<div class="largura-1_1  fonte-12 mb16" style="text-align: center;position: relative;top: 20px; ">
-				<audio class="audio .destaque.audio.sem-texto" controls="">
+				<audio id="audio_1" class="audio .destaque.audio.sem-texto" controls preload="auto" autobuffer>
 					<source src="recursos/audios/M1_A2_RA_001.mp3" type="audio/mp3">
 					<p>Seu browser não suporta este recurso</p>
 				</audio>
@@ -287,7 +287,7 @@
 			<div class="largura-1_2" style="text-align: center;position: relative;top: 20px;">
 				<h4>Na ilustração, confira o Conceito de Saúde:</h4>
 				<img class="img_vert" src="recursos/M1_A2_RM_02.svg">
-				<audio class="audio .destaque.audio.sem-texto" controls="">
+				<audio id="audio_2" class="audio .destaque.audio.sem-texto" controls preload="auto" autobuffer>
 					<source src="recursos/audios/M1_A2_RA_002.mp3" type="audio/mp3">
 					<p>Seu browser não suporta este recurso</p>
 				</audio>
@@ -420,32 +420,35 @@
 				</p>
 			</div>
 			<div class="accordion-comissao">
-					<button class="accordion">Comissão Intergestores Tripartie (CIT)</button>
-					<div class="panel2">
-						<img src="recursos/M1_A2_RM_21.svg">
-					</div>
-		
-					<button class="accordion">Comissão Intergestores Bipartie (CIB)</button>
-					<div class="panel2">
-						<img src="recursos/M1_A2_RM_22.svg">
-					</div>
-		
-					<button class="accordion">Comissão Intergestores Regional (CIR)</button>
-					<div class="panel2">
-						<img src="recursos/M1_A2_RM_23.svg">
-					</div>
+				<button class="accordion">Comissão Intergestores Tripartie (CIT)</button>
+				<div class="panel2">
+					<img src="recursos/M1_A2_RM_21.svg">
+				</div>
+
+				<button class="accordion">Comissão Intergestores Bipartie (CIB)</button>
+				<div class="panel2">
+					<img src="recursos/M1_A2_RM_22.svg">
+				</div>
+
+				<button class="accordion">Comissão Intergestores Regional (CIR)</button>
+				<div class="panel2">
+					<img src="recursos/M1_A2_RM_23.svg">
+				</div>
 			</div>
 
 			<div class="texto-link-rodape">
 				<h3><b>Conheça Mais</b></h3>
-				<p class="fonte-10">O recurso para compra de medicamentos da PNAISP é transferido para o Estado, no entanto, mediante
+				<p class="fonte-10">O recurso para compra de medicamentos da PNAISP é transferido para o Estado, no
+					entanto, mediante
 					pactuação em CIB pode
 					ser descentralizado ao Município.</p>
 				<h3>Portaria da PNAISP:</h3>
 				<p class="fonte-10">
-					<a href="http://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt2765_12_12_2014.html">http://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt2765_12_12_2014.html</a>
+					<a
+						href="http://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt2765_12_12_2014.html">http://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt2765_12_12_2014.html</a>
 					<span>mais informações:</span>
-					<a href=" http://dab.saude.gov.br/portaldab/pnaisp.php">http://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt2765_12_12_2014.html</a>
+					<a
+						href=" http://dab.saude.gov.br/portaldab/pnaisp.php">http://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt2765_12_12_2014.html</a>
 				</p>
 			</div>
 
@@ -555,6 +558,19 @@
 				}
 			});
 		}
+
+		/* Audio */
+
+		var audio_1 = document.getElementById("audio_1");
+		var audio_2 = document.getElementById("audio_2");
+
+		audio_1.addEventListener("play", function () {
+			audio_2.pause();
+		}, false);
+		audio_2.addEventListener("play", function () {
+			audio_1.pause();
+		}, false);
+		
 
 	</script>
 
