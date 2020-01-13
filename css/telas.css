@@ -675,6 +675,19 @@ video{
   margin: 50px auto;
   text-align: center;
 }
+.texto-link-rodape{
+  border-style: solid;
+  border-color: black;
+  border-radius: 9px;
+  border-width: 1px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-size: 10px;
+}
+.texto-link-rodape p a{
+  background: transparent;
+  color: blue;
+}
 
 
 /* Accordian */
