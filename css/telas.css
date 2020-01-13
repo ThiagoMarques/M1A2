@@ -640,9 +640,6 @@ video{
 .destaque-inferior{
   padding-left: 32px;
 }
-.texto-rodape{
-  margin: 20px;
-}
 .vertical-align {
   position: relative;
   top: 50%;
@@ -698,10 +695,11 @@ video{
   background: transparent;
   color: blue;
 }
+.texto-destaque-inferior{
+  margin: 10px;
+}
 .imagem-texto-rodape{
   margin-top: 80px;
-
-  
 }
 
 
