@@ -9,6 +9,7 @@
 	<link rel="icon" href="img/icone-fiocruz.png">
     <title>Quiz</title>
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/quiz.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
    <!--  <link rel="stylesheet" href="https://efg.brasilia.fiocruz.br/ava/external/quizy/css/quizyfillblank.css"> -->
@@ -25,7 +26,7 @@
             }            
             total = $("section:not([id='resultados'])").length;
             $(".feedback div").hide();
-            $(".me_feedback").hide(); //feedbacks nultipla escolha para multiplos feedbacks
+            $(".me_feedback").hide(); //feedbacks multipla escolha para multiplos feedbacks
             $(".vf_feedback").hide(); //feedbacks in line do VF
             $('input[type="radio"]:checked').prop("checked", false);
             $("section:not([id='resultados'])").each(function (indexQuestao, questao) {
@@ -61,6 +62,9 @@
                 location.reload();
             })
         });
+        function limpaTela(){
+            $('#body-quiz').removeClass('quiz');
+        }
         function verificarResposta(questao) {
             var opcaoCorreta = $("#" + questao + " form input[type='hidden']").val();
             if(opcaoCorreta.indexOf("-")>0){ // verifica se é verdadeiro ou falso
@@ -131,6 +135,8 @@
                       $("#" + questao + " form input[name='opcao']:checked+label+div").addClass("incorreta").show('slow');
                       $(".me_feedback.incorreta").css('top', $("#"+questao+"verificar").position().top + 35);
                       exibirFeedback(questao, opcaoSelecionada);
+                      $('#body-quiz').addClass('quiz');
+                      setTimeout(limpaTela, 1000);
                  } else if (opcaoSelecionada == opcaoCorreta) {
                     //se opção selecionada for a correta, exibir aviso de acerto e mostrar feedback
                     $("#" + questao + " form input[name='opcao']:checked+label").addClass("correta");
@@ -152,6 +158,8 @@
 
             
         }
+        
+        
         function exibirFeedback(questao, opcaoSelecionada) {
             var feedback = $("#" + questao + " .me_feedback");
             if ($(feedback).children("div").length > 1) {
@@ -453,15 +461,16 @@
     </style>
 </head>
 
-<body class="">
+<body class="" id="body-quiz">
      <section>
         <div class="enunciado">
             <p>O termo "colegiado" diz respeito à forma de gestão na qual a direção é compartilhada por um conjunto de pessoas com igual autoridade, que reunidas, decidem. Órgãos colegiados, portanto, são aqueles em que as decisões são tomadas em grupo. Sobre o assunto, a Lei 8.142 de 1990 estabelece em seu Art. 1° que o Sistema Único de Saúde (SUS) contará, em cada esfera de governo, sem prejuízo das funções do Poder Legislativo, com instâncias colegiadas.</p>
 			<p><b>É uma instância colegiada do SUS:</b></p>
         </div>
         <form>
+            <p>Teste</p>
             <input type="radio" name="opcao" value="0">
-            <label>Ministério da Saúde.</label> <div class="me_feedback">O Ministério da Saúde é o órgão do Poder Executivo Federal responsável pela organização e elaboração de planos e políticas públicas voltados para a promoção, a prevenção e a assistência à saúde dos brasileiros. É função do MS dispor de condições para a proteção e recuperação da saúde da população, reduzindo as enfermidades, controlando as doenças endêmicas e parasitárias e melhorando a vigilância à saúde, dando, assim, mais qualidade de vida ao brasileiro.</div>
+            <label>Ministério da Saúde.</label> <div id="clear" class="me_feedback">O Ministério da Saúde é o órgão do Poder Executivo Federal responsável pela organização e elaboração de planos e políticas públicas voltados para a promoção, a prevenção e a assistência à saúde dos brasileiros. É função do MS dispor de condições para a proteção e recuperação da saúde da população, reduzindo as enfermidades, controlando as doenças endêmicas e parasitárias e melhorando a vigilância à saúde, dando, assim, mais qualidade de vida ao brasileiro.</div>
             <input type="radio" name="opcao" value="1">
             <label>Conferência de Saúde.</label> <div class="me_feedback">As Conferências de Saúde são um espaço de ampla participação da comunidade e têm papel de avaliar a política pública de saúde periodicamente – a cada dois ou quatro anos. A Conferência tem o papel de formular as diretrizes da política de saúde para determinado período, além, de orientar a elaboração do Plano de Saúde. A ação do conselho deve estar em consonância com o discutido na Conferência. Segundo a Lei 8142/90, a Conferência de Saúde deve se reunir a cada quatro anos, com representação dos vários segmentos sociais, para avaliar a situação da saúde e propor as diretrizes para a formulação da política de saúde nos níveis correspondentes, convocada pelo Poder Executivo ou, extraordinariamente, pelo Conselho de Saúde. É na Conferência de Saúde que o povo avalia, orienta e decide os rumos da saúde em cada esfera de governo: federal, estadual e municipal.</div>
             <input type="radio" name="opcao" value="2">

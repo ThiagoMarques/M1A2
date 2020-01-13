@@ -1,0 +1,13 @@
+.feedback-incorreto{
+    opacity: 0.3;
+    background-color: lightslategray;
+    
+}
+.quiz {
+    opacity: 0.3;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    background-color: lightslategray; 
+}
+
+
